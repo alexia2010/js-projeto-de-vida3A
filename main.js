@@ -1,12 +1,12 @@
-const textos = document.querySelectorAll (".botao");
-const textos = document.querySelectorAll (".aba-conteudo");
-const contadores = document.querySelectorAll (".contador");
+const botoes = document.querySelectorAll(".botao");
+const textos = document.querySelectorAll(".aba-conteudo");
+const contadores = document.querySelectorAll(".contador");
 
-contadores
+contadores[0].textContent = "Contagem regressiva!";
 
 for(let i = 0; i < botoes.length; i = i + 1){
     botoes[i].onclick = function(){
-        for(let j = 0; j < botoes.length; j = j +1){
+        for(let j = 0; j < botoes.length; j = j + 1){
             botoes[j].classList.remove("ativo");
             textos[j].classList.remove("ativo");
         }
